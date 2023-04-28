@@ -4,7 +4,7 @@ const cloudinary = require("cloudinary");
 require("dotenv").config({ path: "./config/config.env" });
 connectDatabase();
 const mongoose = require("mongoose");
-mongoose.set('strictQuery', true);
+//mongoose.set('strictQuery', true);
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
